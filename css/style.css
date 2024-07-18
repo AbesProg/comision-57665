@@ -1,0 +1,491 @@
+/*---------------FONTS-------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*------------RESET----------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Libre Bodoni", sans-serif;
+}
+
+
+/*-----------HEADER----------------*/
+.navbar{
+    background-color: rgb(189, 141, 65)!important;
+    position: sticky;
+    top: 0;
+}
+
+header img {
+    width: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 15px;
+}
+
+header nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+/*-----------MAIN------------------*/
+
+.hero {
+    width: 100%;
+    padding: 40px;
+    height: calc(100vh - 198px);
+    background-image: url(../img/banner.jpg);
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.hero h1 {
+    color: white;
+    padding: 10px;
+    font-size: 60px;
+    text-decoration: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.hero a {
+    font-size: 30px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.575);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.frase-inicio {
+    color: white;
+    background-color: rgb(12, 10, 7);
+    text-align: center;
+    padding: 20px;
+}
+
+.destacados {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.destacados div {
+    margin: 20px;
+    border: 2px solid black;
+    width: 304px;
+    height: 450px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.destacados a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(187, 170, 139);
+    padding: 10px;
+}
+
+.destacados h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.destacados div img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 35px;
+}
+
+.datos {
+    background-color: rgb(187, 170, 139);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.datos div {
+    margin-right: 40px;
+}
+
+.datos h2 {
+    font-size: 30px;
+}
+
+.datos p {
+    font-size: 20px;
+}
+
+.datos img {
+    width: 130px;
+    height: 130px;
+}
+
+.titulo-relleno {
+    color: white;
+    background-color: rgb(12, 10, 7);
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.titulo-relleno p {
+    margin-top: 5px;
+}
+
+.relleno div img {
+    width: 100%;
+    height: calc(100vh - 340px);
+    object-fit: cover;
+}
+
+.frase-final {
+    color: white;
+    background-color: rgb(12, 10, 7);
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.frase-final p {
+    margin-top: 5px;
+}
+
+/*!------------PRODUCTOS-----------*/
+
+.productos h1 {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.productos div {
+    margin: 20px;
+    border: 2px solid black;
+    width: 354px;
+    height: 700px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.productos div h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.productos div a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(187, 170, 139);
+    padding: 10px;
+}
+
+.productos div img {
+    width: 350px;
+    height: 440px;
+    margin-bottom: 50px;
+}
+
+/*!------------NOVEDADES-----------*/
+
+.novedades {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-auto-rows: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 475px);
+    row-gap: 70px;
+    margin-bottom: 10px;
+}
+
+.novedades h1 {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.novedades h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.novedades div {
+    align-items: center;
+    margin: 20px;
+    border: 2px solid black;
+    width: 354px;
+    height: 780px;
+    text-align: center;
+}
+
+.novedades p {
+    margin-bottom: 20px;
+}
+
+.novedades a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(187, 170, 139);
+    padding: 10px;
+}
+
+.novedades div img {
+    width: 100%;
+    height: 70%;
+}
+
+/*!------------NOSOTROS-----------*/
+
+.nosotros {
+    background-color: rgb(187, 170, 139);
+    width: 100%;
+    padding: 15px;
+    height: calc(100vh - 300px);
+    background-image: url(../img/oficina.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nosotros h1 {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.575);
+    color: black;
+    padding: 10px;
+    font-size: 30px;
+}
+
+
+.nosotros p {
+    background-color: rgba(255, 255, 255, 0.575);
+    margin-top: 15px;
+    margin: 50px;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    font-size: 20px;
+    text-align: center;
+    padding: 120px;
+}
+
+.oficina {
+    margin-top: 20px;
+    background-color: rgb(187, 170, 139);
+    width: 50%;
+    padding: 15px;
+    height: calc(100vh - 300px);
+    text-align: center;
+    background-image: url(../img/oficina-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.oficina h2 {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.575);
+    color: black;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.oficina p {
+    background-color: rgba(255, 255, 255, 0.575);
+    margin-top: 15px;
+    margin: 50px;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    font-size: 20px;
+    text-align: center;
+    padding: 120px;
+}
+
+.valores {
+    text-align: right;
+}
+
+.valores h2 {
+    text-align: left;
+}
+
+.valores p {
+    text-align: left;
+    padding: 10px;
+}
+
+.valores img {
+    width: 50%;
+}
+
+/*!------------CONTACTO-----------*/
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.atencion h1 {
+    font-size: 40px;
+    margin-left: 70px;
+    margin-top: 240px;
+}
+
+.atencion p {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-bottom: 60px;
+}
+
+.datos-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 110px;
+}
+
+.datos-info div {
+    display: inline-flex;
+    padding: 20px;
+}
+
+.datos-info p {
+    margin-top: 39px;
+}
+
+.datos-info img {
+    width: 70px;
+    height: 70px;
+    margin: 15px;
+}
+
+.formulario {
+    margin-right: 300px;
+    margin-left: 250px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+.formulario h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.formulario div {
+    margin: 10px;
+}
+
+.formulario ul li {
+    list-style: none;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.formulario a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(187, 170, 139);
+    padding: 10px;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+
+/*-----------FOOTER----------------*/
+
+footer {
+    background-color: rgba(165, 124, 37, 0.747);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.redes-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.texto-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 55px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.texto-footer img{
+    margin: 0 auto;
+    height: 130px;
+    width: 130px;
+} 
+
+footer img{
+    display: flex;
+    flex-direction: row;
+    width: 70px;
+    height: 70px;
+    margin: 25px;
+}
+
+.redes-iconos{
+    display: flex;
+    flex-direction: row;
+}
+
+/*---------------MEDIA QUERIES-------------------*/
+
+@media screen and (max-width:453px){
+    .hero a{
+        font-size: 20px;
+    }
+
+    .hero h1{
+        font-size: 50px;
+    }
+}
