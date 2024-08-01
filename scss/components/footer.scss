@@ -1,0 +1,40 @@
+footer{
+    background-color: rgba(165, 124, 37, 0.747);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .redes-footer{
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            img{
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+    .texto-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 55px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    img{
+        display: flex;
+        flex-direction: row;
+        width: 130px;
+        height: 130px;
+        margin: 25px;
+    }
+    .redes-iconos{
+        display: flex;
+        flex-direction: row;
+    }
+}

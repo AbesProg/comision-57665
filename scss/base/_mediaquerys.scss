@@ -1,0 +1,228 @@
+/*---------------MEDIA QUERIES-------------------*/
+
+/*!---------------MAIN------------------------*/
+
+@media screen and (max-width:700px){
+    .hero h1{
+        font-size: 35px;
+    }
+    .hero a{
+        font-size: 20px;
+    }
+
+    .datos div{
+        margin-right: 0;
+    }
+    .datos div h2{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:760px){
+    .datos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:565px){
+    .titulo-relleno div{
+        font-size: 15px;
+    }
+}
+
+
+/*!---------------NOVEDADES------------------------*/
+
+@media screen and (max-width:1181px){
+    .novedades{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
+
+/*!---------------PRODUCTOS------------------------*/
+
+@media screen and (max-width:1181px){
+    .productos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+/*!---------------NOSOTROS------------------------*/
+@media screen and (max-width:1181px){
+    .nosotros h1{
+        padding: 5;
+    }
+    .nosotros p{
+        padding: 60px;
+    }
+    .oficina{
+        font-size: 15px;
+    }
+    .valores div{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1070px){
+    .nosotros h1{
+        font-size: 20px;
+    }
+    .nosotros p{
+        font-size: 15px;
+        padding: 50px;
+    }
+    .oficina img{
+        width: 400px;
+        height: 500px;
+    }
+    .valores img{
+        width: 400px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .oficina{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 15px;
+    }
+    .oficina div{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .valores{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 15px;
+    }
+    .valores div{
+        width: 100%;
+        margin: 5px;
+        padding: 10px;
+    }
+    .oficina img{
+        width: 500px;
+        height: 400px;
+    }
+    .valores img{
+        width: 500px;
+        height: 400px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .nosotros p{
+        padding: 10px;
+    }
+    .oficina img{
+        width: 400px;
+        height: 300px;
+    }
+    .valores img{
+        width: 400px;
+        height: 300px;
+    }
+}
+@media screen and (max-width:423px){
+    .oficina img{
+        width: 300px;
+        height: 200px;
+    }
+    .valores img{
+        width: 300px;
+        height: 200px;
+    }
+}
+/*!---------------CONTACTO------------------------*/
+
+
+@media screen and (max-width:905px){
+    .formulario h2{
+        font-size: 30px;
+    }
+    .formulario a{
+        margin-left: 0px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:837px){
+    .atencion{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .atencion h1{
+        text-align: center;
+        font-size: 35px;
+    }
+    .atencion p{
+        font-size: 25px;
+    }
+    .datos-info{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 100px;
+        width: 100%;
+    }
+    .formulario div{
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width:425px){
+    .formulario{
+        margin-left: 40px;
+    }
+}
+
+/*!---------------FOOTER------------------------*/
+
+@media screen and (max-width:1190px){
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-footer{
+        text-align: center;
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .texto-footer{
+        font-size: 15px;
+    }
+    .redes-footer div img{
+        height: 50px;
+        width: 50px;
+    }
+    footer img{
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -18,14 +18,12 @@ body {
 /*-----------HEADER----------------*/
 .navbar{
     background-color: rgb(189, 141, 65)!important;
-    position: sticky;
-    top: 0;
 }
 
-header img {
+header nav div img {
     width: 100px;
 }
-
+/* 
 header nav ul {
     list-style: none;
     display: flex;
@@ -33,15 +31,15 @@ header nav ul {
 
 header nav ul li {
     margin: 15px;
-}
+} */
 
-header nav ul li a {
+/* header nav ul li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 20px;
     margin-right: 100px;
     margin-left: 100px;
-}
+} */
 
 /*-----------MAIN------------------*/
 
@@ -72,6 +70,12 @@ header nav ul li a {
     background-color: rgba(255, 255, 255, 0.575);
     color: rgb(0, 0, 0);
     padding: 20px;
+    transition-duration: 0.5s;
+}
+
+.hero a:hover{
+    background-color:rgb(250, 221, 166);
+    font-size: 33px;
 }
 
 .frase-inicio {
@@ -105,6 +109,12 @@ header nav ul li a {
     color: white;
     background-color: rgb(187, 170, 139);
     padding: 10px;
+    transition: 1s;
+}
+
+.destacados a:hover{
+    background-color: black;
+    transform: scale(1.5);
 }
 
 .destacados h3 {
@@ -132,15 +142,15 @@ header nav ul li a {
     margin-right: 40px;
 }
 
-.datos h2 {
+.datos div h2 {
     font-size: 30px;
 }
 
-.datos p {
+.datos div p {
     font-size: 20px;
 }
 
-.datos img {
+.datos div img {
     width: 130px;
     height: 130px;
 }
@@ -153,7 +163,7 @@ header nav ul li a {
     font-size: 20px;
 }
 
-.titulo-relleno p {
+.titulo-relleno div p {
     margin-top: 5px;
 }
 
@@ -171,20 +181,33 @@ header nav ul li a {
     font-size: 20px;
 }
 
-.frase-final p {
+.frase-final div p {
     margin-top: 5px;
 }
 
 /*!------------PRODUCTOS-----------*/
 
+.productos{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 475px);
+    grid-auto-rows: auto;
+    row-gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
 .productos h1 {
     background-color: black;
     color: white;
+    width: 100%;
     font-size: 30px;
-    padding: 10px;
     text-align: center;
+    padding: 10px;
 }
-
 
 .productos div {
     margin: 20px;
@@ -202,11 +225,17 @@ header nav ul li a {
     font-size: 20px;
 }
 
-.productos div a {
+.productos div a{
     text-decoration: none;
     color: white;
     background-color: rgb(187, 170, 139);
     padding: 10px;
+    transition-duration: 1s;
+}
+
+.productos div a:hover{
+    background-color: black;
+    transform: scale(1);
 }
 
 .productos div img {
@@ -221,24 +250,25 @@ header nav ul li a {
     width: 100%;
     height: 100%;
     display: grid;
+    grid-template-columns: repeat(4, 475px);
     grid-auto-rows: auto;
+    row-gap: 50px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    grid-template-columns: repeat(4, 475px);
-    row-gap: 70px;
     margin-bottom: 10px;
 }
 
 .novedades h1 {
     background-color: black;
     color: white;
+    width: 100%;
     font-size: 30px;
     text-align: center;
     padding: 10px;
 }
 
-.novedades h2 {
+.novedades div h2 {
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px;
@@ -254,15 +284,19 @@ header nav ul li a {
     text-align: center;
 }
 
-.novedades p {
+.novedades div p {
     margin-bottom: 20px;
 }
-
-.novedades a {
+.novedades div a {
     text-decoration: none;
     color: white;
     background-color: rgb(187, 170, 139);
     padding: 10px;
+    transition-duration: 1s;
+}
+.novedades div a:hover{
+    background-color: black;
+    transform: scale(1);
 }
 
 .novedades div img {
@@ -278,7 +312,6 @@ header nav ul li a {
     padding: 15px;
     height: calc(100vh - 300px);
     background-image: url(../img/oficina.jpg);
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -288,6 +321,7 @@ header nav ul li a {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.575);
     color: black;
+    margin: 20px;
     padding: 10px;
     font-size: 30px;
 }
@@ -296,7 +330,7 @@ header nav ul li a {
 .nosotros p {
     background-color: rgba(255, 255, 255, 0.575);
     margin-top: 15px;
-    margin: 50px;
+    margin: 60px;
     color: rgb(0, 0, 0);
     text-align: right;
     font-size: 20px;
@@ -305,52 +339,40 @@ header nav ul li a {
 }
 
 .oficina {
-    margin-top: 20px;
-    background-color: rgb(187, 170, 139);
-    width: 50%;
-    padding: 15px;
-    height: calc(100vh - 300px);
-    text-align: center;
-    background-image: url(../img/oficina-2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.oficina h2 {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.575);
-    color: black;
-    padding: 10px;
-    font-size: 30px;
-}
-
-.oficina p {
-    background-color: rgba(255, 255, 255, 0.575);
-    margin-top: 15px;
-    margin: 50px;
-    color: rgb(0, 0, 0);
-    text-align: right;
     font-size: 20px;
     text-align: center;
-    padding: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.valores {
-    text-align: right;
+.oficina div{
+    width: 40%;
 }
 
-.valores h2 {
-    text-align: left;
+.oficina img{
+    margin-top: 20px;
+    width: 500px;
+    height: 600px;
 }
 
-.valores p {
-    text-align: left;
-    padding: 10px;
+.valores{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.valores div{
+    width: 40%;
+    text-align: center;
+    font-size: 20px;
 }
 
 .valores img {
-    width: 50%;
+    width: 500px;
+    height: 600px;
 }
 
 /*!------------CONTACTO-----------*/
@@ -359,19 +381,17 @@ header nav ul li a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(233, 197, 130, 0.603);
 }
 
-.atencion h1 {
-    font-size: 40px;
-    margin-left: 70px;
-    margin-top: 240px;
-}
-
-.atencion p {
+.atencion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     font-size: 20px;
-    margin-top: 10px;
-    margin-left: 70px;
-    margin-bottom: 60px;
+    width: 20%;
 }
 
 .datos-info {
@@ -379,6 +399,7 @@ header nav ul li a {
     flex-direction: column;
     margin-left: 40px;
     margin-top: 110px;
+    margin-bottom: 70px;
 }
 
 .datos-info div {
@@ -386,11 +407,11 @@ header nav ul li a {
     padding: 20px;
 }
 
-.datos-info p {
+.datos-info div p {
     margin-top: 39px;
 }
 
-.datos-info img {
+.datos-info div img {
     width: 70px;
     height: 70px;
     margin: 15px;
@@ -410,21 +431,17 @@ header nav ul li a {
 
 .formulario div {
     margin: 10px;
+    margin-top: 30px;
 }
 
-.formulario ul li {
-    list-style: none;
-    margin: 20px;
-    flex-direction: column;
-}
 
-.formulario a {
+.formulario div a {
     text-decoration: none;
+    align-items: center;
     color: white;
-    background-color: rgb(187, 170, 139);
+    background-color: gray;
     padding: 10px;
-    margin-left: 200px;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 
@@ -432,10 +449,9 @@ header nav ul li a {
 
 footer {
     background-color: rgba(165, 124, 37, 0.747);
-    padding: 5px;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -446,7 +462,11 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 20px;
+}
+
+.redes-footer div img{
+    width: 70px;
+    height: 70px;
 }
 
 .texto-footer{
@@ -459,17 +479,16 @@ footer {
     text-align: center;
 }
 
-.texto-footer img{
-    margin: 0 auto;
+/* .texto-footer img{
     height: 130px;
     width: 130px;
-} 
+}  */
 
 footer img{
     display: flex;
     flex-direction: row;
-    width: 70px;
-    height: 70px;
+    width: 130px;
+    height: 130px;
     margin: 25px;
 }
 
@@ -480,12 +499,230 @@ footer img{
 
 /*---------------MEDIA QUERIES-------------------*/
 
-@media screen and (max-width:453px){
+/*!---------------MAIN------------------------*/
+
+@media screen and (max-width:700px){
+    .hero h1{
+        font-size: 35px;
+    }
     .hero a{
         font-size: 20px;
     }
 
-    .hero h1{
-        font-size: 50px;
+    .datos div{
+        margin-right: 0;
+    }
+    .datos div h2{
+        font-size: 20px;
     }
 }
+
+@media screen and (max-width:760px){
+    .datos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:565px){
+    .titulo-relleno div{
+        font-size: 15px;
+    }
+}
+
+
+/*!---------------NOVEDADES------------------------*/
+
+@media screen and (max-width:1181px){
+    .novedades{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
+
+/*!---------------PRODUCTOS------------------------*/
+
+@media screen and (max-width:1181px){
+    .productos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+/*!---------------NOSOTROS------------------------*/
+@media screen and (max-width:1181px){
+    .nosotros h1{
+        padding: 5;
+    }
+    .nosotros p{
+        padding: 60px;
+    }
+    .oficina{
+        font-size: 15px;
+    }
+    .valores div{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1070px){
+    .nosotros h1{
+        font-size: 20px;
+    }
+    .nosotros p{
+        font-size: 15px;
+        padding: 50px;
+    }
+    .oficina img{
+        width: 400px;
+        height: 500px;
+    }
+    .valores img{
+        width: 400px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .oficina{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 15px;
+    }
+    .oficina div{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .valores{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 15px;
+    }
+    .valores div{
+        width: 100%;
+        margin: 5px;
+        padding: 10px;
+    }
+    .oficina img{
+        width: 500px;
+        height: 400px;
+    }
+    .valores img{
+        width: 500px;
+        height: 400px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .nosotros p{
+        padding: 10px;
+    }
+    .oficina img{
+        width: 400px;
+        height: 300px;
+    }
+    .valores img{
+        width: 400px;
+        height: 300px;
+    }
+}
+@media screen and (max-width:423px){
+    .oficina img{
+        width: 300px;
+        height: 200px;
+    }
+    .valores img{
+        width: 300px;
+        height: 200px;
+    }
+}
+/*!---------------CONTACTO------------------------*/
+
+
+@media screen and (max-width:905px){
+    .formulario h2{
+        font-size: 30px;
+    }
+    .formulario a{
+        margin-left: 0px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:837px){
+    .atencion{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .atencion h1{
+        text-align: center;
+        font-size: 35px;
+    }
+    .atencion p{
+        font-size: 25px;
+    }
+    .datos-info{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 100px;
+        width: 100%;
+    }
+    .formulario div{
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width:425px){
+    .formulario{
+        margin-left: 40px;
+    }
+}
+
+/*!---------------FOOTER------------------------*/
+
+@media screen and (max-width:1190px){
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-footer{
+        text-align: center;
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .texto-footer{
+        font-size: 15px;
+    }
+    .redes-footer div img{
+        height: 50px;
+        width: 50px;
+    }
+    footer img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
