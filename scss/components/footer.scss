@@ -1,5 +1,5 @@
 footer{
-    background-color: rgba(165, 124, 37, 0.747);
+    background-color:rgb(255, 222, 171);
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -7,11 +7,13 @@ footer{
     .redes-footer{
         div{
             display: flex;
+            flex-wrap: wrap;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             img{
+                flex-direction: row;
                 width: 70px;
                 height: 70px;
             }
